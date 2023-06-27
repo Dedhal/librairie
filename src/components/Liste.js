@@ -44,10 +44,10 @@ function Liste () {
 						<div className="row my-3" key={livre.id}>
 							<div className="card col-sm m-3" style={{width: 23 + 'rem'}}>
 								<div className="col-sm">
-									<button className="btn btn-danger float-end" onClick={() => deleteLivre(livre.id)}>
+									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livre.id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
 									</button>
-									<button className="btn btn-warning float-end" onClick={() => editLivre(livre.id)}>
+									<button className="btn btn-warning float-end m-1" onClick={() => editLivre(livre.id)}>
 										<img src={edit} alt="edit" className="icon" />
 									</button>
 								</div>
@@ -63,10 +63,10 @@ function Liste () {
 							{index+1 < livres.length && 
 							<div key={livres[index + 1].id} className="card col-sm m-3" style={{width: 23 + 'rem'}}>
 								<div className="col-sm">
-									<button className="btn btn-danger float-end" onClick={() => deleteLivre(livres[index + 1].id)}>
+									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livres[index + 1].id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
 									</button>
-									<button className="btn btn-warning float-end" onClick={() => editLivre(livres[index + 1].id)}>
+									<button className="btn btn-warning float-end m-1" onClick={() => editLivre(livres[index + 1].id)}>
 										<img src={edit} alt="edit" className="icon" />
 									</button>
 								</div>
@@ -82,10 +82,10 @@ function Liste () {
 							{index+2 < livres.length && 
 							<div key={livres[index + 2].id} className="card col-sm m-3" style={{width: 23 + 'rem'}}>
 								<div className="col-sm">
-									<button className="btn btn-danger float-end" onClick={() => deleteLivre(livres[index + 2].id)}>
+									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livres[index + 2].id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
 									</button>
-									<button className="btn btn-warning float-end" onClick={() => editLivre(livres[index + 2].id)}>
+									<button className="btn btn-warning float-end m-1" onClick={() => editLivre(livres[index + 2].id)}>
 										<img src={edit} alt="edit" className="icon" />
 									</button>
 								</div>

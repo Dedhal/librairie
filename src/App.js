@@ -11,16 +11,14 @@ function App() {
   return (
     <div className="App">
 
-        <Link to="/">Accueil</Link>
-          <Link to="/ajouter">Ajouter un Livre</Link>
-          {/*<Link to="/edit">Editer un livre</Link>*/}
+        <Link to="/" className="btn btn-primary">Accueil</Link>
+        <Link to="/ajouter" className="btn btn-primary">Ajouter un Livre</Link>
 
 
           <Routes>
               <Route path="/" element={<Liste />} />
               <Route path="/ajouter" element={<Formulaire />} />
               <Route path="/edit/:id" element={<Edit />} />
-              {/*<Route path="/edit" element={<Edition />} />*/}
 
           </Routes>
     </div>
