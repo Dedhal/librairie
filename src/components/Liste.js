@@ -54,10 +54,11 @@ function Liste () {
 								<div>
 									<h2 className="card-title">{livre.titre}</h2>
 								</div>
-
-								<p className="card-text">{livre.auteur}</p>
-								<p className="card-text">{livre.description}</p>
-								<p className="card-text">{livre.prix}</p>
+								<div className="card-body">
+									<p className="card-text">{livre.auteur}</p>
+									<p className="card-text">{livre.description}</p>
+									<p className="card-text">{livre.prix}</p>
+								</div>
 							</div>
 
 							{index+1 < livres.length && 
@@ -73,10 +74,11 @@ function Liste () {
 								<div>
 									<h2 className="card-title">{livres[index + 1].titre}</h2>
 								</div>
-
-								<p className="card-text">{livres[index + 1].auteur}</p>
-								<p className="card-text">{livres[index + 1].description}</p>
-								<p className="card-text">{livres[index + 1].prix}</p>
+								<div className="card-body">
+									<p className="card-text">{livres[index + 1].auteur}</p>
+									<p className="card-text">{livres[index + 1].description}</p>
+									<p className="card-text">{livres[index + 1].prix}</p>
+								</div>
 							</div>
 							}
 							{index+2 < livres.length && 
@@ -92,10 +94,12 @@ function Liste () {
 								<div>
 									<h2 className="card-title">{livres[index + 2].titre}</h2>
 								</div>
-
-								<p className="card-text">{livres[index + 2].auteur}</p>
-								<p className="card-text">{livres[index + 2].description}</p>
-								<p className="card-text">{livres[index + 2].prix}</p>
+								
+								<div className="card-body">
+									<p className="card-text">{livres[index + 2].auteur}</p>
+									<p className="card-text">{livres[index + 2].description}</p>
+									<p className="card-text">{livres[index + 2].prix}</p>
+								</div>
 							</div>
 							}
 						</div>
