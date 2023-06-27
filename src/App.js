@@ -9,11 +9,11 @@ import './App.css';
 
 function App() {
   return (
+
     <div className="App">
 
-        <Link to="/" className="btn btn-primary">Accueil</Link>
-        <Link to="/ajouter" className="btn btn-primary">Ajouter un Livre</Link>
-
+        <Link to="/" className="btn btn-primary m-1">Accueil</Link>
+        <Link to="/ajouter" className="btn btn-primary m-1">Ajouter un Livre</Link>
 
           <Routes>
               <Route path="/" element={<Liste />} />
@@ -22,6 +22,7 @@ function App() {
 
           </Routes>
     </div>
+
   );
 }
 
