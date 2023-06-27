@@ -112,6 +112,7 @@ app.put("/livres/:id", (req, res) => {
                         }
                         else {
                             console.log(`File is written successfully!`);
+                            res.status(200).json(req.body)
                         }
                     })
                 }
@@ -153,6 +154,7 @@ app.delete("/livres/:id", (req, res) => {
                 }
                 else {
                     console.log(`File is written successfully!`);
+                    res.status(200).json(req.body)
                 }
             });
         }})
