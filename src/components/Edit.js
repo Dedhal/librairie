@@ -50,30 +50,35 @@ function Edit() {
 	}
 
 	return (
-		<div className="Formulaire">
-			<h1>Ajouter un Livre</h1>
-			<form onSubmit={onSubmit} method="post">
-				<div>
-					<label for="titre">Titre: </label>
-					<input type="text" name="titre" id="titre" value={livre.titre} onChange={e => setTitre(e.target.value)} required />
+		<div className="Formulaire m-3">
+			<h1>Edition</h1>
+
+			<div className="d-flex justify-content-center">
+				<div className="card col-sm-6 m-3">
+					<form onSubmit={onSubmit} method="post" className="card-body">
+						<div className="form-group row m-2">
+							<label for="titre" className="col-sm-2 col-form-label">Titre: </label>
+							<input type="text" name="titre" id="titre" className="col-sm-10" value={livre.titre} onChange={e => setTitre(e.target.value)} required />
+						</div>
+						<div className="form-group row m-2">
+							<label for="auteur" className="col-sm-2 col-form-label">Auteur: </label>
+							<input type="text" name="auteur" id="auteur" className="col-sm-10" value={livre.auteur} onChange={e => setAuteur(e.target.value)} required />
+						</div>
+						<div className="form-group row m-2">
+							<label for="prix" className="col-sm-2 col-form-label">Prix: </label>
+							<input type="text" name="prix" id="prix" className="col-sm-10" value={livre.prix} onChange={e => setPrix(e.target.value)} required />
+						</div>
+						<div className="form-group row m-2">
+							<label for="description" className="col-sm-2 col-form-label">Description: </label>
+							<input type="text" name="description" id="description" className="col-sm-10" value={livre.description} onChange={e => setDescription(e.target.value)} required />
+						</div>
+						<div className="form-group row m-2">
+							<input type="submit" value="Editer" />
+						</div>
+						
+					</form>
 				</div>
-				<div>
-					<label for="auteur">Auteur: </label>
-					<input type="text" name="auteur" id="auteur" value={livre.auteur} onChange={e => setAuteur(e.target.value)} required />
-				</div>
-				<div>
-					<label for="prix">Prix: </label>
-					<input type="text" name="prix" id="prix" value={livre.prix} onChange={e => setPrix(e.target.value)} required />
-				</div>
-				<div>
-					<label for="description">Description: </label>
-					<input type="text" name="description" id="description" value={livre.description} onChange={e => setDescription(e.target.value)} required />
-				</div>
-				<div>
-					<input type="submit" value="Editer" />
-				</div>
-				
-			</form>
+			</div>
 		</div>
 	);
 }

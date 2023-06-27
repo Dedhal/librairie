@@ -33,7 +33,7 @@ function Liste () {
 	}
 
 	return (
-		<div>
+		<div className="container">
 			<div>
 				<h1>Liste des livres</h1>
 			</div>
