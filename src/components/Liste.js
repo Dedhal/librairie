@@ -42,7 +42,7 @@ function Liste () {
 				if(index % 3 === 0) {
 					return (
 						<div className="row my-3" key={livre.id}>
-							<div className="card col-sm m-3" style={{width: 23 + 'rem'}}>
+							<div className="card col-sm m-3">
 								<div className="col-sm">
 									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livre.id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
@@ -62,7 +62,7 @@ function Liste () {
 							</div>
 
 							{index+1 < livres.length && 
-							<div key={livres[index + 1].id} className="card col-sm m-3" style={{width: 23 + 'rem'}}>
+							<div key={livres[index + 1].id} className="card col-sm m-3">
 								<div className="col-sm">
 									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livres[index + 1].id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
@@ -82,7 +82,7 @@ function Liste () {
 							</div>
 							}
 							{index+2 < livres.length && 
-							<div key={livres[index + 2].id} className="card col-sm m-3" style={{width: 23 + 'rem'}}>
+							<div key={livres[index + 2].id} className="card col-sm m-3">
 								<div className="col-sm">
 									<button className="btn btn-danger float-end m-1" onClick={() => deleteLivre(livres[index + 2].id)}>
 										<img src={deleteIcon} alt="delete" className="icon" />
